@@ -27,7 +27,7 @@ export const siteConfig = {
   },
   about: {
     title: 'Nossa História',
-    text: 'Nos conhecemos em um fim de tarde de primavera e, desde então, cada conversa virou plano, cada plano virou risada e cada risada nos lembrou de que o amor é simples quando é verdadeiro. Hoje celebramos a escolha de caminharmos juntos e queremos que você faça parte desse capítulo.',
+    text: 'Uma história que começou na adolescência, quando dois corações se encontraram e descobriram que o amor podia ser lar. Entre sonhos, risadas e planos, fomos crescendo juntos e aprendendo que o melhor de nós só existe quando estamos um ao lado do outro. Celebramos não apenas um dia, mas a promessa de uma vida inteira feita de amor e fé. Obrigado por fazerem parte desse novo capítulo.',
     image: './foto1.jpg',
     imageAlt: 'Foto do casal — nossa história',
   },
