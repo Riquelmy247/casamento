@@ -1,7 +1,6 @@
-// Arquivos em public/images/ — URLs começam com /images/
 const IMAGENS = {
-  capa: '/images/capa.jpg',
-  nossaHistoria: '/images/nossa-historia.jpg',
+  capa: './foto.jpg',
+  nossaHistoria: './foto1.jpg',
 }
 
 export const siteConfig = {
@@ -23,13 +22,13 @@ export const siteConfig = {
   hero: {
     title: 'Estamos nos casando!',
     subtitle: 'E queremos compartilhar esse momento com você.',
-    image: '/images/foto.jpg',
+    image: './foto.jpg',
     imageAlt: 'Foto do casal — capa do site',
   },
   about: {
     title: 'Nossa História',
     text: 'Nos conhecemos em um fim de tarde de primavera e, desde então, cada conversa virou plano, cada plano virou risada e cada risada nos lembrou de que o amor é simples quando é verdadeiro. Hoje celebramos a escolha de caminharmos juntos e queremos que você faça parte desse capítulo.',
-    image: '/images/foto1.jpg',
+    image: './foto1.jpg',
     imageAlt: 'Foto do casal — nossa história',
   },
   wedding: {

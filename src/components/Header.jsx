@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
 import { HiMenuAlt3, HiX } from 'react-icons/hi'
 import { siteConfig } from '../data/siteConfig'
 
@@ -28,12 +27,12 @@ export default function Header() {
       }`}
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 sm:px-6">
-        <Link
-          to="/"
+        <a
+          href={import.meta.env.BASE}
           className="font-display text-lg font-semibold tracking-wide text-olive sm:text-xl"
         >
           {siteConfig.couple.names}
-        </Link>
+        </a>
 
         <nav className="hidden items-center gap-8 md:flex" aria-label="Principal">
           {links.map(({ to, label }) => (

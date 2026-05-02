@@ -1,5 +1,4 @@
 import { useEffect } from 'react'
-import { Routes, Route } from 'react-router-dom'
 import { FaWhatsapp } from 'react-icons/fa'
 import Header from './components/Header'
 import Footer from './components/Footer'
@@ -10,7 +9,7 @@ import GiftRegistrySection from './sections/GiftRegistrySection'
 import { siteConfig } from './data/siteConfig'
 import { createWhatsAppUrl } from './utils/whatsapp'
 
-function HomePage() {
+export default function App() {
   useEffect(() => {
     document.title = `${siteConfig.couple.names} — Casamento`
   }, [])
@@ -41,13 +40,5 @@ function HomePage() {
         <FaWhatsapp className="h-7 w-7" />
       </a>
     </div>
-  )
-}
-
-export default function App() {
-  return (
-    <Routes>
-      <Route path="/" element={<HomePage />} />
-    </Routes>
   )
 }

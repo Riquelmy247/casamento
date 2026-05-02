@@ -5,7 +5,7 @@ Site estático em React (Vite) para divulgar o evento, a história do casal e a 
 ## Stack
 
 - React 19, Vite 8, Tailwind CSS 4  
-- React Router, Framer Motion, React Icons  
+- Framer Motion, React Icons  
 
 ## Começar
 
