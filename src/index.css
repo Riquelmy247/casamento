@@ -1,0 +1,41 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Outfit', system-ui, sans-serif;
+  --color-olive: #6b7a46;
+  --color-olive-dark: #556038;
+  --color-olive-light: #8a9668;
+  --color-cream: #f5f1ea;
+  --color-cream-dark: #ebe4d8;
+  --color-stone: #6b6560;
+  --color-stone-light: #9a958c;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply m-0 min-h-svh bg-white font-sans text-stone antialiased;
+    font-family: var(--font-sans);
+  }
+  #root {
+    @apply w-full max-w-none;
+  }
+}
+
+@utility font-display {
+  font-family: var(--font-display);
+}
+
+.bg-page-pattern {
+  background-color: #ffffff;
+  background-image:
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgb(107 122 70 / 0.08), transparent),
+    radial-gradient(ellipse 60% 40% at 100% 100%, rgb(245 241 234 / 0.9), transparent);
+}
+
+.glass-panel {
+  @apply border border-white/60 bg-white/70 shadow-lg backdrop-blur-md;
+}
