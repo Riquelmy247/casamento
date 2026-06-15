@@ -1,16 +1,15 @@
 import { useEffect, useState } from 'react'
-import { HiMenuAlt3, HiX } from 'react-icons/hi'
+import { HiCalendar, HiGift, HiHeart, HiHome } from 'react-icons/hi'
 import { siteConfig } from '../data/siteConfig'
 
 const links = [
-  { to: '#hero', label: 'Início' },
-  { to: '#historia', label: 'História' },
-  { to: '#evento', label: 'Evento' },
-  { to: '#presentes', label: 'Presentes' },
+  { to: '#hero', label: 'Início', icon: HiHome },
+  { to: '#historia', label: 'História', icon: HiHeart },
+  { to: '#evento', label: 'Evento', icon: HiCalendar },
+  { to: '#presentes', label: 'Presentes', icon: HiGift },
 ]
 
 export default function Header() {
-  const [open, setOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
 
   useEffect(() => {
@@ -45,37 +44,6 @@ export default function Header() {
             </a>
           ))}
         </nav>
-
-        <button
-          type="button"
-          className="rounded-xl border border-cream-dark/80 bg-white/80 p-2 text-stone backdrop-blur md:hidden"
-          aria-expanded={open}
-          aria-controls="mobile-menu"
-          onClick={() => setOpen((v) => !v)}
-        >
-          {open ? <HiX className="h-6 w-6" /> : <HiMenuAlt3 className="h-6 w-6" />}
-          <span className="sr-only">Menu</span>
-        </button>
-      </div>
-
-      <div
-        className={`mx-4 mt-2 overflow-hidden rounded-2xl border border-white/60 bg-white/90 shadow-lg backdrop-blur-md transition-all md:hidden ${
-          open ? 'max-h-80 opacity-100' : 'max-h-0 opacity-0 pointer-events-none'
-        }`}
-        id="mobile-menu"
-      >
-        <div className="flex flex-col gap-1 p-3">
-          {links.map(({ to, label }) => (
-            <a
-              key={to}
-              href={to}
-              className="rounded-xl px-4 py-3 text-sm font-medium text-stone hover:bg-cream"
-              onClick={() => setOpen(false)}
-            >
-              {label}
-            </a>
-          ))}
-        </div>
       </div>
 
       <div
@@ -84,6 +52,24 @@ export default function Header() {
         }`}
         aria-hidden
       />
+
+      <nav
+        className="fixed inset-x-0 bottom-0 z-50 border-t border-cream-dark/80 bg-white/92 backdrop-blur-md md:hidden"
+        aria-label="Navegação mobile"
+      >
+        <div className="mx-auto flex max-w-lg items-stretch justify-around px-2 py-2 pb-[max(0.5rem,env(safe-area-inset-bottom))]">
+          {links.map(({ to, label, icon: Icon }) => (
+            <a
+              key={to}
+              href={to}
+              className="flex flex-1 flex-col items-center gap-1 rounded-2xl px-1 py-1 text-stone-light transition-colors active:text-olive"
+            >
+              <Icon className="h-5 w-5" aria-hidden />
+              <span className="text-[10px] font-medium tracking-wide">{label}</span>
+            </a>
+          ))}
+        </div>
+      </nav>
     </header>
   )
 }
