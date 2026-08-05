@@ -16,7 +16,7 @@ export default function App() {
 
   const wa = createWhatsAppUrl(
     siteConfig.couple.whatsapp,
-    'Olá! Vim pelo site do casamento. ❤️',
+    'Olá! Vim pelo site do casamento.',
   )
 
   return (

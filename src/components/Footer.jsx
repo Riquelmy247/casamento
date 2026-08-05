@@ -15,7 +15,7 @@ export default function Footer() {
   const { names, weddingDate, whatsapp } = siteConfig.couple
   const generalWa = createWhatsAppUrl(
     whatsapp,
-    'Olá! Gostaria de tirar uma dúvida sobre o casamento. ❤️',
+    'Olá! Gostaria de tirar uma dúvida sobre o casamento.',
   )
 
   return (

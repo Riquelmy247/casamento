@@ -1,5 +1,5 @@
 export const createWhatsAppLink = (phone, productName) => {
-  const message = `Olá! Gostaria de presentear vocês com: ${productName}. ❤️`
+  const message = `Olá! Gostaria de presentear vocês com: ${productName}.`
   return `https://wa.me/${phone}?text=${encodeURIComponent(message)}`
 }
 
