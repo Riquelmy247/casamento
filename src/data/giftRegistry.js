@@ -16,7 +16,7 @@ export const giftRegistry = {
       category: 'Cozinha',
       image: 'https://m.media-amazon.com/images/I/41ENcUKZzEL._AC_SL1200_.jpg',
       link: 'https://www.amazon.com.br/Micro-ondas-Brit%C3%A2nia-BMO38-Litros-Limpa/dp/B0DBR8ZWFV/',
-      presentiado: 'Não',
+      presentiado: 'Sim',
     },
     {
       id: 3,
