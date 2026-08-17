@@ -52,7 +52,7 @@ export const giftRegistry = {
       category: 'Cozinha',
       image: 'https://m.media-amazon.com/images/I/51G4AxVAJxL._AC_SL1000_.jpg',
       link: 'https://www.amazon.com.br/Fritadeira-Fryer-Forno-Litros-Mondial/dp/B0BZJDB39Z/',
-      presentiado: 'Não',
+      presentiado: 'Sim',
     },
     {
       id: 9,
@@ -61,7 +61,7 @@ export const giftRegistry = {
       category: 'Cozinha',
       image: 'https://m.media-amazon.com/images/I/41reXjYlagL._AC_SL1200_.jpg',
       link: 'https://www.amazon.com.br/SUGGAR-DEPURADOR-SLIM-PRETO-DPS181PT/dp/B0B3SHMB2W/',
-      presentiado: 'Não',
+      presentiado: 'Sim',
     },
     {
       id: 10,
