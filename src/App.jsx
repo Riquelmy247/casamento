@@ -6,6 +6,7 @@ import HeroSection from './sections/HeroSection'
 import AboutSection from './sections/AboutSection'
 import WeddingInfoSection from './sections/WeddingInfoSection'
 import GiftRegistrySection from './sections/GiftRegistrySection'
+import PadrinhosSection from './sections/PadrinhosSection'
 import { siteConfig } from './data/siteConfig'
 import { createWhatsAppUrl } from './utils/whatsapp'
 
@@ -26,6 +27,7 @@ export default function App() {
         <HeroSection />
         <AboutSection />
         <WeddingInfoSection />
+        <PadrinhosSection />
         <GiftRegistrySection />
       </main>
       <Footer />

@@ -1,11 +1,12 @@
 import { useEffect, useState } from 'react'
-import { HiCalendar, HiGift, HiHeart, HiHome } from 'react-icons/hi'
+import { HiCalendar, HiGift, HiHeart, HiHome, HiUsers } from 'react-icons/hi'
 import { siteConfig } from '../data/siteConfig'
 
 const links = [
   { to: '#hero', label: 'Início', icon: HiHome },
   { to: '#historia', label: 'História', icon: HiHeart },
   { to: '#evento', label: 'Evento', icon: HiCalendar },
+  { to: '#padrinhos', label: 'Padrinhos', icon: HiUsers },
   { to: '#presentes', label: 'Presentes', icon: HiGift },
 ]
 
@@ -33,7 +34,7 @@ export default function Header() {
           {siteConfig.couple.names}
         </a>
 
-        <nav className="hidden items-center gap-8 md:flex" aria-label="Principal">
+        <nav className="hidden items-center gap-5 lg:gap-8 md:flex" aria-label="Principal">
           {links.map(({ to, label }) => (
             <a
               key={to}
