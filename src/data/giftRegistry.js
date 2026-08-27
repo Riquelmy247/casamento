@@ -7,7 +7,8 @@ export const giftRegistry = {
       category: 'Cozinha',
       image: 'https://http2.mlstatic.com/D_NQ_NP_2X_619844-MLA99938311049_112025-F.webp',
       link: 'https://www.amazon.com.br/Purificador-Electrolux-Compacto-Cinza-Bivolt/dp/B08X66RQ48/',
-      presentiado: 'Não',
+      presentiado: 'Sim',
+      presenteadoPor: 'Maria Eduarda',
     },
     {
       id: 2,
@@ -17,6 +18,7 @@ export const giftRegistry = {
       image: 'https://m.media-amazon.com/images/I/41ENcUKZzEL._AC_SL1200_.jpg',
       link: 'https://www.amazon.com.br/Micro-ondas-Brit%C3%A2nia-BMO38-Litros-Limpa/dp/B0DBR8ZWFV/',
       presentiado: 'Sim',
+      presenteadoPor: 'Kelton e Tayná',
     },
     {
       id: 3,
@@ -26,6 +28,7 @@ export const giftRegistry = {
       image: 'https://homedock.com.br/cdn/shop/files/Bege-Moveis-Provincia-314999518.jpg?format=webp&v=1753100523&width=1200',
       link: 'https://homedock.com.br/products/conjunto-de-jantar-mesa-com-vidro-avena-4-cadeiras-new-drop-canella-c-off-white?variant=44663726571741&country=BR&currency=BRL&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&utm_source=Google&utm_medium=Paid&utm_campaign=PMAX-Sala-de-Jantar-Conjuntos&utm_term=[keyword]&utm_content=Conjuntos4Lugares&gad_source=4&gad_campaignid=23881868345&gbraid=0AAAAADnzHC1aOrYI7KqbycnG0oKda7Tbp&gclid=CjwKCAjwvsvTBhBaEiwAmf-3npW4887DKhSjxoYNzMaRS9pDzji2uNYOUZcYNbX9xWvy-IRR-ulWhhoC9fEQAvD_BwE',
       presentiado: 'Não',
+      presenteadoPor: '',
     },
     {
       id: 6,
@@ -35,6 +38,7 @@ export const giftRegistry = {
       image: 'https://m.media-amazon.com/images/I/71JEGr-bk9L._AC_SL1500_.jpg',
       link: 'https://www.amazon.com.br/Electrolux-Efficient-Tripla-PerfectCook-FE4GB/dp/B0FVPMV5D8/',
       presentiado: 'Sim',
+      presenteadoPor: 'Robson e Kamila',
     },
     {
       id: 7,
@@ -44,6 +48,7 @@ export const giftRegistry = {
       image: 'https://imgs.casasbahia.com.br/55071786/1g.jpg?imwidth=500',
       link: 'https://www.casasbahia.com.br/geladeira-brastemp-brm46mk-385-litros-frost-free-duplex-painel-eletronico-inox/p/55071786',
       presentiado: 'Não',
+      presenteadoPor: '',
     },
     {
       id: 8,
@@ -53,6 +58,7 @@ export const giftRegistry = {
       image: 'https://m.media-amazon.com/images/I/51G4AxVAJxL._AC_SL1000_.jpg',
       link: 'https://www.amazon.com.br/Fritadeira-Fryer-Forno-Litros-Mondial/dp/B0BZJDB39Z/',
       presentiado: 'Sim',
+      presenteadoPor: 'Tiago e Marisa',
     },
     {
       id: 9,
@@ -62,6 +68,7 @@ export const giftRegistry = {
       image: 'https://m.media-amazon.com/images/I/41reXjYlagL._AC_SL1200_.jpg',
       link: 'https://www.amazon.com.br/SUGGAR-DEPURADOR-SLIM-PRETO-DPS181PT/dp/B0B3SHMB2W/',
       presentiado: 'Sim',
+      presenteadoPor: 'João Pedro e Evelyn',
     },
     {
       id: 10,
@@ -71,6 +78,7 @@ export const giftRegistry = {
       image: 'https://http2.mlstatic.com/D_NQ_NP_2X_714545-MLA95383474203_102025-F.webp',
       link: 'https://www.mercadolivre.com.br/panela-de-arroz-visor-glass-10-xicaras-ph10p-philco/p/MLB15571052',
       presentiado: 'Não',
+      presenteadoPor: '',
     },
     {
       id: 11,
@@ -80,6 +88,7 @@ export const giftRegistry = {
       image: 'https://m.media-amazon.com/images/I/61vvN3krAYL._AC_SL1000_.jpg',
       link: 'https://www.amazon.com.br/Liquidificador-1400-Full-Preto-Oster/dp/B08DFJRCJB/',
       presentiado: 'Não',
+      presenteadoPor: '',
     },
     {
       id: 12,
@@ -89,6 +98,7 @@ export const giftRegistry = {
       image: 'https://m.media-amazon.com/images/I/51LRfEFCSlL._AC_SL1024_.jpg',
       link: 'https://www.amazon.com.br/Panelas-Pe%C3%A7as-Preto-Antiaderente-Utens%C3%ADlios/dp/B0BVRMSG5Q',
       presentiado: 'Não',
+      presenteadoPor: '',
     },
   ],
   quarto: [
@@ -100,6 +110,7 @@ export const giftRegistry = {
       image: 'https://imgs.casasbahia.com.br/1570716603/1xg.jpg?imwidth=500',
       link: 'https://www.casasbahia.com.br/cama-box-bau-casal-138-bello-box-tecido-sintetico-preto/p/1570716603',
       presentiado: 'Não',
+      presenteadoPor: '',
     },
     {
       id: 14,
@@ -109,6 +120,7 @@ export const giftRegistry = {
       image: 'https://a-static.mlcdn.com.br/420x420/colchao-casal-ortobom-de-molas-ensacadas-30x138x188cm-new-ortotech/magazineluiza/235575100/cea07efd8ac289aca12f5418010bc744.jpg',
       link: 'https://www.magazineluiza.com.br/colchao-casal-ortobom-de-molas-ensacadas-30x138x188cm-new-ortotech/p/235575100/co/ccbs/?&seller_id=magazineluiza&utm_source=google&utm_medium=cpc&utm_term=84381&utm_campaign=google_eco_per_ven_pla_mo_sor_1p_moveis-0326&utm_content=&partner_id=84381&gclsrc=aw.ds&gad_source=1&gad_campaignid=23605372492&gbraid=0AAAAAD4zZmTrarkqJKLzCnCzgMkObzo55&gclid=CjwKCAjwwdbPBhBgEiwAxBRA4USbOOzDwla8CGnToMX2ZuyXvi0BlY6fDlIxVs6cjx7FPwz--kGjthoCFc0QAvD_BwE',
       presentiado: 'Não',
+      presenteadoPor: '',
     },
     {
       id: 16,
@@ -118,6 +130,7 @@ export const giftRegistry = {
       image: 'https://m.media-amazon.com/images/I/31KfL-LTFAL._AC_SL1000_.jpg',
       link: 'https://www.amazon.com.br/Ar-condicionado-Midea-Ecomaster-42ezvca09m5-38ezvca09m5/dp/B0F9HDVB86/',
       presentiado: 'Não',
+      presenteadoPor: '',
     },
   ],
   sala: [
@@ -129,6 +142,7 @@ export const giftRegistry = {
       image: 'https://imgs.casasbahia.com.br/55062678/1g.jpg?imwidth=500',
       link: 'https://www.casasbahia.com.br/sofa-4-lugares-cama-inbox-belem-retratil-e-reclinavel-revestido-em-suede-velusoft-230cm-de-largura/p/55062678',
       presentiado: 'Não',
+      presenteadoPor: '',
     },
     {
       id: 18,
@@ -138,6 +152,7 @@ export const giftRegistry = {
       image: 'https://imgs.casasbahia.com.br/1561964841/1xg.jpg?imwidth=500',
       link: 'https://www.casasbahia.com.br/painel-para-tv-home-suspenso-noruega-freijo-grafite-perolizado-moveis-leao/p/1561964841',
       presentiado: 'Não',
+      presenteadoPor: '',
     },
     {
       id: 19,
@@ -147,6 +162,7 @@ export const giftRegistry = {
       image: 'https://m.media-amazon.com/images/I/71dVw49kW0L._AC_SL1500_.jpg',
       link: 'https://www.amazon.com.br/PHILIPS-Smart-50PUG7300-Comando-Bluetooth/dp/B0FPBPX7WF/',
       presentiado: 'Sim',
+      presenteadoPor: 'Wilson e Quênia',
     },
   ],
   lavanderia: [
@@ -158,6 +174,7 @@ export const giftRegistry = {
       image: 'https://carrefourbr.vtexassets.com/arquivos/ids/208247680/4101634_4101650_A.png?v=639035698346630000',
       link: 'https://www.carrefour.com.br/produto/lavadora-de-roupas-brastemp-14kg-cinza-platinum-com-12-programas-de-lavagem-com-smart-sensor-e-reduzir-tempo-bwj14a9-220v-338321034?gad_campaignid=22228509978&gad_source=4&gbraid=0AAAAADjinolln3-tpcN4TjkSAmkKJ-Ydp&gclid=CjwKCAjwvsvTBhBaEiwAmf-3ntMJ8lHrqPdN4vbLsaZZ0A8v7DBlxCyU6psUg9-OD_6vm7Fi9jhWKBoCoeQQAvD_BwE&utm_campaign=google_pmax_1P_eletrodomesticos_18-02-25&utm_medium=sem&utm_source=google_pmax_1p',
       presentiado: 'Não',
+      presenteadoPor: '',
     },
   ],
   outros: [
@@ -170,6 +187,7 @@ export const giftRegistry = {
       link: 'https://nubank.com.br/cobrar/1b71jt/69f6630a-2252-4827-9d90-181739283c77',
       linkLabel: 'Pix',
       presentiado: 'Não',
+      presenteadoPor: '',
     },
     {
       id: 22,
@@ -179,6 +197,7 @@ export const giftRegistry = {
       image: 'https://m.magazineluiza.com.br/a-static/420x420/robo-aspirador-e-passa-pano-kabum-smart-900-5-modos-de-limpeza-base-2-em-1-mapeamento-3d-220v-preto-kbsf010/kabum/366170/9182db7e91e94d086d5d7907c6d52a94.jpeg',
       link: 'https://www.magazineluiza.com.br/robo-aspirador-e-passa-pano-kabum-smart-900-5-modos-de-limpeza-base-2-em-1-mapeamento-3d-220v-preto-kbsf010/p/hbaf4k7bja/ep/eprb/?&seller_id=kabum&utm_source=google&utm_medium=cpc&utm_term=84399&utm_campaign=google_eco_per_ven_pla_arp_sor_3p_ep-a-0326&utm_content=&partner_id=84399&gclsrc=aw.ds&gad_source=1&gad_campaignid=23605403218&gbraid=0AAAAAD4zZmTDpVOqlmHUZlr6iuXxotlIW&gclid=CjwKCAjwwdbPBhBgEiwAxBRA4dZc8C1PpjgEofVDDJgzebda3l50GACmTSJpPs8p-SwzgSgE8WDzaxoCdpEQAvD_BwE',
       presentiado: 'Não',
+      presenteadoPor: '',
     },
     {
       id: 23,
@@ -187,7 +206,8 @@ export const giftRegistry = {
       category: 'Outros',
       image: 'https://http2.mlstatic.com/D_NQ_NP_2X_765901-MLB104652439073_012026-F.webp',
       link: 'https://www.mercadolivre.com.br/fechadura-eletronica-biometrica-senha-tuya-wiffi-security/up/MLBU3719200134',
-      presenteado: 'Não',
+      presentiado: 'Não',
+      presenteadoPor: '',
     },
   ],
 }

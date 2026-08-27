@@ -13,6 +13,7 @@ export default function GiftCard({ item, index = 0 }) {
   const { whatsapp } = siteConfig.couple
   const img = item.image?.trim() ? item.image : placeholder
   const jaPresenteado = String(item.presentiado ?? 'Não').trim().toLowerCase() === 'sim'
+  const presenteadoPor = String(item.presenteadoPor ?? '').trim()
   const linkLabel = item.linkLabel ?? 'Exemplo'
 
   return (
@@ -50,6 +51,11 @@ export default function GiftCard({ item, index = 0 }) {
           {item.notes ? (
             <p className="mt-1 text-sm leading-relaxed text-stone-light">{item.notes}</p>
           ) : null}
+          {jaPresenteado && presenteadoPor ? (
+            <p className="mt-2 text-sm text-stone">
+              Presenteado por <span className="font-medium text-olive">{presenteadoPor}</span>
+            </p>
+          ) : null}
         </div>
         <div className="mt-auto flex flex-col gap-2 sm:flex-row sm:flex-wrap">
           {jaPresenteado ? (
@@ -57,7 +63,7 @@ export default function GiftCard({ item, index = 0 }) {
               className="inline-flex flex-1 cursor-not-allowed items-center justify-center gap-2 rounded-full border border-stone/20 bg-stone-100 px-4 py-2.5 text-sm font-medium text-stone-light"
               aria-label="Este presente já foi presenteado; o link não está mais disponível."
             >
-              Presenteado ✅
+              {presenteadoPor ? `Presente de ${presenteadoPor}` : 'Presenteado ✅'}
             </span>
           ) : (
             <a
