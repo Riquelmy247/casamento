@@ -87,8 +87,8 @@ export const giftRegistry = {
       category: 'Cozinha',
       image: 'https://m.media-amazon.com/images/I/61vvN3krAYL._AC_SL1000_.jpg',
       link: 'https://www.amazon.com.br/Liquidificador-1400-Full-Preto-Oster/dp/B08DFJRCJB/',
-      presentiado: 'Não',
-      presenteadoPor: '',
+      presentiado: 'Sim',
+      presenteadoPor: 'Leandra',
     },
     {
       id: 12,
@@ -97,8 +97,8 @@ export const giftRegistry = {
       category: 'Cozinha',
       image: 'https://m.media-amazon.com/images/I/51LRfEFCSlL._AC_SL1024_.jpg',
       link: 'https://www.amazon.com.br/Panelas-Pe%C3%A7as-Preto-Antiaderente-Utens%C3%ADlios/dp/B0BVRMSG5Q',
-      presentiado: 'Não',
-      presenteadoPor: '',
+      presentiado: 'Sim',
+      presenteadoPor: 'José e Lidyane',
     },
   ],
   quarto: [
@@ -119,8 +119,8 @@ export const giftRegistry = {
       category: 'Quarto',
       image: 'https://a-static.mlcdn.com.br/420x420/colchao-casal-ortobom-de-molas-ensacadas-30x138x188cm-new-ortotech/magazineluiza/235575100/cea07efd8ac289aca12f5418010bc744.jpg',
       link: 'https://www.magazineluiza.com.br/colchao-casal-ortobom-de-molas-ensacadas-30x138x188cm-new-ortotech/p/235575100/co/ccbs/?&seller_id=magazineluiza&utm_source=google&utm_medium=cpc&utm_term=84381&utm_campaign=google_eco_per_ven_pla_mo_sor_1p_moveis-0326&utm_content=&partner_id=84381&gclsrc=aw.ds&gad_source=1&gad_campaignid=23605372492&gbraid=0AAAAAD4zZmTrarkqJKLzCnCzgMkObzo55&gclid=CjwKCAjwwdbPBhBgEiwAxBRA4USbOOzDwla8CGnToMX2ZuyXvi0BlY6fDlIxVs6cjx7FPwz--kGjthoCFc0QAvD_BwE',
-      presentiado: 'Não',
-      presenteadoPor: '',
+      presentiado: 'Sim',
+      presenteadoPor: 'Alex e Juliana',
     },
     {
       id: 16,
