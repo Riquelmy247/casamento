@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { FaExternalLinkAlt } from 'react-icons/fa'
+import { FaExternalLinkAlt, FaHeart } from 'react-icons/fa'
 import { siteConfig } from '../data/siteConfig'
 import WhatsAppButton from './WhatsAppButton'
 
@@ -23,9 +23,9 @@ export default function GiftCard({ item, index = 0 }) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: '-40px' }}
       transition={{ duration: 0.45, delay: Math.min(index * 0.05, 0.35) }}
-      className={`group flex h-full flex-col overflow-hidden rounded-2xl border bg-white shadow-md ring-olive/0 transition ${
+      className={`group flex h-full flex-col overflow-hidden rounded-[1.6rem] border bg-white shadow-md transition ${
         jaPresenteado
-          ? 'border-stone/20 opacity-[0.72] grayscale'
+          ? 'border-olive/25 shadow-olive/10'
           : 'border-cream-dark/80 hover:-translate-y-1 hover:shadow-xl hover:ring-2 hover:ring-olive/15'
       }`}
     >
@@ -36,47 +36,57 @@ export default function GiftCard({ item, index = 0 }) {
           className={`h-full w-full object-cover transition duration-500 ${jaPresenteado ? '' : 'group-hover:scale-105'}`}
           loading="lazy"
         />
-        <span className="absolute left-3 top-3 rounded-full bg-white/90 px-3 py-1 text-xs font-medium text-olive shadow-sm backdrop-blur-sm">
+        <span className="absolute left-3 top-3 rounded-full bg-white/92 px-3 py-1 text-xs font-medium tracking-wide text-olive shadow-sm backdrop-blur-sm">
           {item.category}
         </span>
         {jaPresenteado ? (
-          <span className="absolute right-3 top-3 rounded-full bg-stone-700/90 px-3 py-1 text-xs font-medium text-white shadow-sm backdrop-blur-sm">
+          <span className="absolute right-3 top-3 inline-flex items-center gap-1.5 rounded-full bg-olive px-3 py-1 text-xs font-medium text-white shadow-sm">
+            <FaHeart className="h-2.5 w-2.5" aria-hidden />
             Já presenteado
           </span>
         ) : null}
       </div>
-      <div className="flex flex-1 flex-col gap-3 p-5">
-        <div>
-          <h3 className="font-display text-xl font-semibold text-stone">{item.name}</h3>
-          {item.notes ? (
-            <p className="mt-1 text-sm leading-relaxed text-stone-light">{item.notes}</p>
-          ) : null}
-          {jaPresenteado && presenteadoPor ? (
-            <p className="mt-2 text-sm text-stone">
-              Presenteado por <span className="font-medium text-olive">{presenteadoPor}</span>
-            </p>
-          ) : null}
+
+      <div className="flex flex-1 flex-col gap-4 p-5">
+        <div className="min-h-[4.75rem]">
+          <h3 className="line-clamp-2 font-display text-xl font-semibold leading-snug text-stone">
+            {item.name}
+          </h3>
+          <p className="mt-1.5 line-clamp-1 text-sm leading-relaxed text-stone-light">
+            {item.notes || '\u00A0'}
+          </p>
         </div>
-        <div className="mt-auto flex flex-col gap-2 sm:flex-row sm:flex-wrap">
+
+        <div className="mt-auto flex flex-col gap-2.5">
+          <a
+            href={item.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex h-11 items-center justify-center gap-2 rounded-full border border-stone/15 bg-cream/70 px-4 text-sm font-medium text-stone transition hover:border-olive/40 hover:bg-white"
+          >
+            {linkLabel}
+            <FaExternalLinkAlt className="h-3 w-3 opacity-70" aria-hidden />
+          </a>
+
           {jaPresenteado ? (
-            <span
-              className="inline-flex flex-1 cursor-not-allowed items-center justify-center gap-2 rounded-full border border-stone/20 bg-stone-100 px-4 py-2.5 text-sm font-medium text-stone-light"
-              aria-label="Este presente já foi presenteado; o link não está mais disponível."
+            <div
+              className="flex h-[4.5rem] flex-col items-center justify-center rounded-2xl border border-olive/20 bg-gradient-to-br from-olive/10 to-cream px-3 text-center"
+              aria-label="Este presente já foi presenteado."
             >
-              {presenteadoPor ? `Presente de ${presenteadoPor}` : 'Presenteado ✅'}
-            </span>
+              <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-olive">
+                Presente de
+              </p>
+              <p className="mt-0.5 line-clamp-2 font-display text-base font-semibold leading-tight text-olive-dark">
+                {presenteadoPor || 'Alguém especial'}
+              </p>
+            </div>
           ) : (
-            <a
-              href={item.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex flex-1 items-center justify-center gap-2 rounded-full border border-stone/15 bg-cream/60 px-4 py-2.5 text-sm font-medium text-stone transition hover:border-olive/40 hover:bg-white"
-            >
-              {linkLabel}
-              <FaExternalLinkAlt className="h-3.5 w-3.5 opacity-70" aria-hidden />
-            </a>
+            <WhatsAppButton
+              phone={whatsapp}
+              productName={item.name}
+              className="h-[4.5rem] w-full"
+            />
           )}
-          {jaPresenteado ? null : <WhatsAppButton phone={whatsapp} productName={item.name} className="flex-1" />}
         </div>
       </div>
     </motion.article>

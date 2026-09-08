@@ -26,7 +26,7 @@ export default function WhatsAppButton({
       className={`${base} ${styles} ${className}`}
     >
       <FaWhatsapp className="h-5 w-5 shrink-0" aria-hidden />
-      {children ?? 'Presentear via WhatsApp'}
+      {children ?? 'Presentear'}
     </a>
   )
 }

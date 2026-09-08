@@ -106,7 +106,7 @@ export default function GiftRegistrySection() {
                     </h3>
                     <span className="h-px flex-1 bg-gradient-to-l from-transparent to-cream-dark" />
                   </div>
-                  <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                  <div className="grid items-stretch gap-6 sm:grid-cols-2 lg:grid-cols-3">
                     {block.items.map((item, i) => (
                       <GiftCard key={item.id} item={item} index={i} />
                     ))}
@@ -140,7 +140,7 @@ export default function GiftRegistrySection() {
                   Nenhum presente encontrado com esses filtros.
                 </p>
               ) : (
-                <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                <div className="grid items-stretch gap-6 sm:grid-cols-2 lg:grid-cols-3">
                   {flatItems.map((item, i) => (
                     <GiftCard key={item.id} item={item} index={i} />
                   ))}
